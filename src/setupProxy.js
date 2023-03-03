@@ -4,7 +4,7 @@ module.exports = function(app) {
   app.use(
     '/rss',
     createProxyMiddleware({
-      target: 'https://shuffle3-be.onrender.com',
+      target: 'https://shuffle3-be.onrender.com/rss',
       changeOrigin: true,
     })
   );
