@@ -6,7 +6,7 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100%;
+  height: 100vh;
   background-color: #fef4e6;
   padding: 16px;
 `;
@@ -27,7 +27,7 @@ const Card = styled.div`
 `;
 
 const Title = styled.h2`
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin-bottom: 1rem;
   color: #000;
 `;
@@ -105,6 +105,7 @@ function App() {
     <Container>
       {randomItem && (
         <Card>
+          <Title>MSSP Shuffle</Title>
           <Title>{randomItem.title}</Title>
           <Content>{randomItem.contentSnippet.substring(0, randomItem.contentSnippet.length - 91)}</Content>
 
